@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgba(0, 0, 0, 0.847);
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin-top: 20px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333333;
+        }
+        
+        form {
+            margin-top: 30px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+            padding-left: 8px;
+            color: #666666;
+            font-weight: 600;
+            font-size: 20px;
+            float: left;
+        }
+        
+        input[type="text"],
+        textarea {
+            width: 97%;
+            padding: 10px;
+            border: 2px solid #dddddd;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        
+        textarea {
+            height: 150px;
+        }
+        
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #333333;
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #555555;
+        }
+        
+        #side {
+            width: 100%;
+        }
+        
+        #main {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex-grow: 1;
+            flex-basis: 0;
+            text-align: center;
+            padding-top: 100px;
+        }
+        
+        .container1 {
+            width: 40%;
+        }
+        
+        .container2 {
+            width: 50%;
+        }
+        
+        #clink {
+            width: 10%;
+            border: 2px;
+            border-radius: 40%;
+            margin-left: 28px;
+            margin-top: 10px;
+        }
+        
+        @media (max-width: 1000px) {
+            body {
+                font-family: Arial, sans-serif;
+                background-color: rgba(0, 0, 0, 0.847);
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                margin: 0 auto;
+                padding: 20px;
+                background-color: white;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                border-radius: 5px;
+                margin-top: 50px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+            h1 {
+                text-align: center;
+                color: #333333;
+            }
+            form {
+                margin-top: 30px;
+            }
+            label {
+                display: block;
+                margin-bottom: 10px;
+                padding-left: 8px;
+                color: #666666;
+                font-weight: 600;
+                font-size: 20px;
+                float: left;
+            }
+            input[type="text"],
+            textarea {
+                width: 97%;
+                padding: 10px;
+                border: 2px solid #dddddd;
+                border-radius: 3px;
+                margin-bottom: 10px;
+                font-size: 20px;
+            }
+            textarea {
+                height: 150px;
+            }
+            input[type="submit"] {
+                display: block;
+                width: 100%;
+                padding: 10px;
+                margin-top: 20px;
+                background-color: #333333;
+                color: #ffffff;
+                font-weight: 600;
+                font-size: 20px;
+                border: none;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+            input[type="submit"]:hover {
+                background-color: #555555;
+            }
+            #side {
+                width: 100%;
+            }
+            #main {
+                display: flex;
+                flex-direction: row-reverse;
+                flex-wrap: wrap;
+                flex-grow: 1;
+                flex-basis: 0;
+                text-align: center;
+                padding-top: 100px;
+            }
+            .container1 {
+                width: 60%;
+            }
+            .container2 {
+                width: 60%;
+            }
+            #slinks {
+                display: grid;
+                grid-auto-flow: column;
+                gap: 10px;
+            }
+            #clink {
+                width: 50%;
+                border: 2px;
+                border-radius: 40%;
+                margin-left: 0px;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        document.body.style.zoom = '90%';
+    </script>
+    <div id="main">
+        <div class="container1 container">
+            <img src="https://www.buid.ac.ae/wp-content/uploads/2022/02/contactus.webp" id="side">
+            <div id="slinks">
+                <a href="https://www.instagram.com/kiran_atmakuri/"><img src="https://play-lh.googleusercontent.com/VRMWkE5p3CkWhJs6nv-9ZsLAs1QOg5ob1_3qg-rckwYW7yp1fMrYZqnEFpk0IoVP4LM" id="clink"></a>
+                <a href="https://www.linkedin.com/in/atmakuri-kiran-064612242/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" id="clink"></a>
+                <a href="https://github.com/kiranatmakuri516"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" id="clink"></a>
+                <a href="mailto:imkiran516@gmail.com"><img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" id="clink"></a>
+            </div>
+
+        </div>
+        <div class="container2 container">
+            <h1>Contact Us</h1>
+            <form action="mailto:imkiran516@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="feedback">Feedback</label>
+                <textarea id="feedback" name="feedback" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

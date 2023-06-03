@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgba(0, 0, 0, 0.847);
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            text-align: center;
+            color: white;
+        }
+        
+        .certificate-list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .certificate {
+            width: 25%;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-left: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            height: 330px;
+        }
+        
+        .certificate:hover {
+            transform: translateY(-5px);
+        }
+        
+        .certificate img {
+            max-width: 100%;
+            height: 250px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 20px grey;
+        }
+        
+        .certificate h2 {
+            color: #333;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        
+        .certificate p {
+            color: #666;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+        
+        @media only screen and (max-width: 480px) {
+            h1 {
+                font-size: 24px;
+                margin: 10px;
+            }
+            .certificate {
+                width: 100%;
+                height: 370px;
+            }
+        }
+        
+        @media only screen and (min-width: 481px) and (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+            }
+            .certificate {
+                width: 45%;
+                height: 370px;
+            }
+        }
+        
+        @media only screen and (min-width: 769px) and (max-width: 1024px) {
+            h1 {
+                font-size: 36px;
+            }
+            .certificate {
+                width: 30%;
+                height: 370px;
+            }
+        }
+        
+        @media only screen and (min-width: 1025px) {
+            h1 {
+                font-size: 48px;
+            }
+            .certificate {
+                width: 23%;
+                height: 370px;
+            }
+        }
+    </style>
+    <script>
+        let title = document.title;
+        window.addEventListener("blur", () => {
+            document.title = "Come Back :(";
+        });
+        window.addEventListener("focus", () => {
+            document.title = title;
+        });
+    </script>
+</head>
+
+<body>
+    <script>
+        document.body.style.zoom = '90%';
+    </script>
+    <div class="container">
+        <h1>Certificates of Kiran Atmakuri</h1>
+        <div class="certificate-list">
+            <div class="certificate">
+                <a href="https://s3.amazonaws.com/codechef_shared/public_certificates/images/certi_54a44c5.jpeg"><img src="https://s3.amazonaws.com/codechef_shared/public_certificates/images/certi_54a44c5.jpeg" alt="Certificate 1"></a>
+                <h2>CCDSA CERTIFICATION</h2>
+                <p>Received Certification on DSA from Codechef.</p>
+            </div>
+            <div class="certificate">
+                <a href="https://i.ibb.co/jr2ytrS/java-certificate.jpg"><img src="https://i.ibb.co/jr2ytrS/java-certificate.jpg" alt="Certificate 2"></a>
+                <h2>NPTEL CERTIFIED JAVA PROGRAMMER</h2>
+                <p>Received Elite+Silver Certification from NPTEL.</p>
+            </div>
+            <div class="certificate">
+                <a href="images/agri-hack.jpg"><img src="images/agri-hack.jpg" alt="Certificate 2"></a>
+                <h2>VISTA HACKATHON</h2>
+                <p>Secured 2nd position in hackathon and won 5K cash prize.</p>
+            </div>
+            <div class="certificate">
+                <a href="images/gnt-hack.jpg"><img src="images/gnt-hack.jpg" alt="Certificate 2"></a>
+                <h2>SRUJANANKURA HACKATHON</h2>
+                <p>Secured 3rd position in hackathon and won 10K cash prize.</p>
+            </div>
+            <div class="certificate">
+                <a href="images/udemy.jpeg"><img src="images/udemy.jpeg" alt="Certificate 2"></a>
+                <h2>FULL STACK DEVELOPMENT</h2>
+                <p>Received certification on full stack development from udemy.</p>
+            </div>
+            <div class="certificate">
+                <a href="images/algotool.jpeg"><img src="images/algotool.jpeg" alt="Certificate 1"></a>
+                <h2>ALGOTOOL BOX CERTIFICATION</h2>
+                <p>Received certification on Algorithms from coursera.</p>
+            </div>
+            <div class="certificate">
+                <a href="images/problemsolving.png"><img src="images/problemsolving.png" alt="Certificate 1"></a>
+                <h2>PROBLEM SOLVING</h2>
+                <p>Received certification on problem solving from Hacker rank.</p>
+            </div>
+            <div class="certificate">
+                <a href="images/flask.png"><img src="images/flask.png" alt="Certificate 1"></a>
+                <h2>FLASK CERTIFICATION</h2>
+                <p>Received certification on flask from LinkedIn learning.</p>
+            </div>
+            <div class="certificate">
+                <a href="images/pythonbasics.png"><img src="images/pythonbasics.png" alt="Certificate 1"></a>
+                <h2>PYTHON CERTIFICATION</h2>
+                <p>Received certification on python from Hacker rank.</p>
+            </div>
+            <div class="certificate">
+                <a href="https://www.sololearn.com/Certificate/CT-U7DXTRXH/png"><img src="https://www.sololearn.com/Certificate/CT-U7DXTRXH/png" alt="Certificate 1"></a>
+                <h2>C++ CERTIFICATION</h2>
+                <p>Received certification on C++ from sololearn.</p>
+            </div>
+            <div class="certificate">
+                <a href="images/prathibha.jpg"><img src="images/prathibha.jpg" alt="Certificate 1"></a>
+                <h2>PRATHIBHA AWARD</h2>
+                <p>Received Prathibha award during matriculation.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

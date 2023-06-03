@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgba(0, 0, 0, 0.847);
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            text-align: center;
+            color: white;
+        }
+        
+        .certificate-list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .certificate {
+            width: 20%;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-left: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            height: fit-content;
+        }
+        
+        .certificate:hover {
+            transform: translateY(-5px);
+        }
+        
+        .certificate img {
+            max-width: 100%;
+            height: 250px;
+            margin-bottom: 20px;
+        }
+        
+        .certificate h2 {
+            color: #333;
+            margin-top: 10px;
+            font-size: 22px;
+        }
+        
+        .certificate p {
+            color: #100f0f;
+            margin-top: 5px;
+            font-size: 20px;
+        }
+        
+        @media (max-width: 1000px) {
+            body {
+                font-family: Arial, sans-serif;
+                background-color: rgba(0, 0, 0, 0.847);
+                margin: 0;
+                padding: 0;
+            }
+            h1 {
+                text-align: center;
+                color: white;
+                font-size: 20px;
+            }
+            .certificate-list {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+            }
+            .certificate {
+                width: 30%;
+                background-color: #fff;
+                border: 1px solid #ddd;
+                padding: 20px;
+                margin-left: 15px;
+                margin-bottom: 20px;
+                text-align: center;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease;
+                height: fit-content;
+            }
+            .certificate:hover {
+                transform: translateY(-5px);
+            }
+            .certificate img {
+                max-width: 100%;
+                height: 100px;
+                margin-bottom: 20px;
+            }
+            .certificate h2 {
+                color: #333;
+                margin-top: 5px;
+                font-size: 15px;
+            }
+            .certificate p {
+                color: #100f0f;
+                margin-top: 2px;
+                font-size: 10px;
+            }
+        }
+    </style>
+    <script>
+        let title = document.title;
+        window.addEventListener("blur", () => {
+            document.title = "Come Back :(";
+        });
+        window.addEventListener("focus", () => {
+            document.title = title;
+        });
+    </script>
+</head>
+
+<body>
+    <script>
+        document.body.style.zoom = '90%';
+    </script>
+
+    <div class="container">
+        <h1>Coding Skills Of Kiran Atmakuri</h1>
+        <div class="certificate-list">
+            <div class="certificate">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1200px-C_Programming_Language.svg.png" alt="skill 1">
+                <h2>C </h2>
+                <p>Number Of problems Solved: 200+</p>
+            </div>
+            <div class="certificate">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png" alt="skill 1">
+                <h2>C++ </h2>
+                <p>Number Of problems Solved: 1000+</p>
+            </div>
+            <div class="certificate">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png" alt="skill 1">
+                <h2>Java</h2>
+                <p>Number Of problems Solved: 50+</p>
+            </div>
+            <div class="certificate">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="skill 1">
+                <h2>Python</h2>
+                <p>Number Of problems Solved: 100+</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Development Skills Of Kiran Atmakuri</h1>
+        <div class="certificate-list">
+            <div class="certificate">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" id="skillpic">
+                <h2>HTML </h2>
+            </div>
+            <div class="certificate">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" id="skillpic">
+                <h2>CSS </h2>
+            </div>
+            <div class="certificate">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Javascript_badge.svg/1200px-Javascript_badge.svg.png" id="skillpic">
+                <h2>Java Script</h2>
+            </div>
+            <div class="certificate">
+                <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--Lvl1ZNKy--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/1ph7yc1i1vqqgwpxegw5.png" id="skillpic">
+                <h2>Node Js</h2>
+            </div>
+            <div class="certificate">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" id="skillpic">
+                <h2>React</h2>
+            </div>
+            <div class="certificate">
+                <img src="https://www.pngkit.com/png/detail/225-2254691_9kib-354x415-unnamed-mongodb-logo-svg.png" id="skillpic">
+                <h2>MongoDb</h2>
+            </div>
+            <div class="certificate">
+                <img src="https://miro.medium.com/v2/resize:fit:438/1*0G5zu7CnXdMT9pGbYUTQLQ.png" id="skillpic">
+                <h2>Flask</h2>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

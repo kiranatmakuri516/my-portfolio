@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiran's Portfolio</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <style>
+        @import url('https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css');
+        * {
+            color: white;
+            font-size: 105%;
+        }
+        
+        #intro i,
+        #intro b {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 40px;
+        }
+        
+        body {
+            background-color: rgba(0, 0, 0, 0.847);
+        }
+        
+        #dum {
+            color: white;
+            margin-left: 20px;
+        }
+        
+        #name {
+            font-size: 30px;
+            font-weight: 500;
+            margin-left: 20px;
+        }
+        
+        #links {
+            font-size: 20px;
+            font-style: bold;
+        }
+        
+        #redirect {
+            color: #8AB4F8;
+            font-size: 25px;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        
+        #dl {
+            width: 70%;
+            text-align: left;
+        }
+        
+        #dr {
+            width: 29%;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            border-left: 2px solid white;
+        }
+        
+        #userpic {
+            border-radius: 50%;
+            width: 50%;
+            height: 80%;
+            text-align: center;
+            margin-left: 90px;
+        }
+        
+        i {
+            font-style: normal;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        #dr2 {
+            text-align: left;
+            padding-left: 20px;
+        }
+        
+        #dl1 {
+            padding-right: 50px;
+        }
+        
+        #dr2 p i {
+            font-weight: 600;
+            font-style: bold;
+        }
+        
+        #about {
+            font-size: 25px;
+            text-decoration: underline;
+        }
+        
+        #profile {
+            width: 40%;
+        }
+        
+        #dr3 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        
+        #dr3-1 {
+            width: 33%;
+        }
+        
+        #dl2 {
+            padding-right: 50px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+        
+        button {
+            background-color: rgba(0, 0, 0, 0.847);
+        }
+        
+        #d1-data,
+        #d2-data,
+        #d3-data {
+            display: none;
+        }
+        
+        .fi {
+            float: right;
+            color: black;
+            font-size: 25px;
+            padding-right: 10px;
+            text-align: center;
+        }
+        
+        #intro {
+            padding-left: 20px;
+            width: 30%;
+        }
+        
+        #main {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        
+        #searchbar {
+            border: 2px;
+            width: 30%;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.331);
+            border-top-left-radius: 27px;
+            border-top-right-radius: 27px;
+            border-bottom-left-radius: 27px;
+            border-bottom-right-radius: 27px;
+            background-color: white;
+            color: black;
+        }
+        
+        #s1 {
+            color: black;
+            text-align: left;
+            padding-left: 10px;
+            font-size: 15px;
+        }
+        
+        #wiki {
+            width: 2%;
+        }
+        
+        @media (max-width: 1000px) {
+            * {
+                color: white;
+                font-size: 16px;
+            }
+            #intro i,
+            #intro b {
+                display: none;
+            }
+            body {
+                background-color: rgba(0, 0, 0, 0.847);
+                margin-left: 2%;
+                margin-right: 2%;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+            }
+            #dum {
+                color: white;
+                margin-left: 2%;
+                float: left;
+                font-size: 15px;
+            }
+            #name {
+                font-size: 30px;
+                font-weight: 500;
+                margin-left: 2%;
+            }
+            #links {
+                font-size: 20px;
+                font-style: bold;
+            }
+            #redirect {
+                color: #8AB4F8;
+                font-size: 25px;
+            }
+            .container {
+                display: flex;
+                flex-direction: column-reverse;
+                flex-wrap: wrap;
+                flex: 1;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+            }
+            #dl {
+                margin-top: 20px;
+                width: 100%;
+                margin-left: 2%;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                flex: 1;
+            }
+            #dr {
+                width: 100%;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                border-left: none;
+            }
+            #userpic {
+                border-radius: 50%;
+                width: 50%;
+                height: 80%;
+                text-align: center;
+                margin-left: 2%;
+            }
+            i {
+                font-style: normal;
+            }
+            a {
+                text-decoration: none;
+            }
+            #dr2 {
+                text-align: left;
+                padding-left: 20px;
+            }
+            #dl1 {
+                padding-right: 50px;
+            }
+            #dr2 p i {
+                font-weight: 600;
+                font-style: bold;
+            }
+            #about {
+                font-size: 25px;
+            }
+            #profile {
+                width: 40%;
+            }
+            #dr3 {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                border-bottom: 2px solid white;
+            }
+            #dr3-1 {
+                width: 33%;
+            }
+            #dl2 {
+                padding-right: 50px;
+                margin-top: 30px;
+                margin-bottom: 40px;
+            }
+            button {
+                background-color: rgba(0, 0, 0, 0.847);
+            }
+            #d1-data,
+            #d2-data,
+            #d3-data {
+                display: none;
+            }
+            .fi {
+                float: right;
+                color: black;
+                font-size: 25px;
+                padding-right: 10px;
+                text-align: center;
+            }
+            #intro {
+                padding-left: 20px;
+                width: fit-content;
+            }
+            #main {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            #searchbar {
+                border: 2px;
+                width: 100%;
+                height: fit-content;
+                box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.331);
+                border-top-left-radius: 27px;
+                border-top-right-radius: 27px;
+                border-bottom-left-radius: 27px;
+                border-bottom-right-radius: 27px;
+                background-color: white;
+                color: black;
+            }
+            #s1 {
+                color: black;
+                text-align: left;
+                padding-left: 10px;
+                font-size: 15px;
+            }
+            #wiki {
+                width: 2%;
+            }
+        }
+    </style>
+    <script>
+        let title = document.title;
+        window.addEventListener("blur", () => {
+            document.title = "Come Back :(";
+        });
+        window.addEventListener("focus", () => {
+            document.title = title;
+        });
+
+        function f1() {
+            var contentDiv = document.getElementById("d1-data");
+            if (contentDiv.style.display === "none") {
+                contentDiv.style.display = "block";
+            } else {
+                contentDiv.style.display = "none";
+            }
+        }
+
+        function f2() {
+            var contentDiv = document.getElementById("d2-data");
+            if (contentDiv.style.display === "none") {
+                contentDiv.style.display = "block";
+            } else {
+                contentDiv.style.display = "none";
+            }
+        }
+
+        function f3() {
+            var contentDiv = document.getElementById("d3-data");
+            if (contentDiv.style.display === "none") {
+                contentDiv.style.display = "block";
+            } else {
+                contentDiv.style.display = "none";
+            }
+        }
+
+        function f4() {
+            var contentDiv = document.getElementById("d4-data");
+            if (contentDiv.style.display === "none") {
+                contentDiv.style.display = "block";
+            } else {
+                contentDiv.style.display = "none";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        document.body.style.zoom = '90%';
+    </script>
+    <div id="main">
+        <div id="intro">
+            <i>A</i>
+            <i>t</i>
+            <i>m</i>
+            <b>a</b>
+            <b>k</b>
+            <b>u</b>
+            <i>r</i>
+            <i>i</i> &nbsp
+            <b>K</b>
+            <b>i</b>
+            <b>r</b>
+            <i>a</i>
+            <i>n</i>
+        </div>
+        <div id="searchbar">
+            <p id="s1">Kiran's Portfolio <i class="fi fi-br-cross"></i></p>
+        </div>
+    </div>
+    <hr>
+    <p id="dum">About 1,40,56,00,000 results (0.01 seconds)</p><br>
+    <p id="name">Atmakuri Kiran's Portfolio</p>
+    <div class="container">
+        <div id="dl">
+            <div id="dl1">
+                <i id="links">
+                    https://kiran's portfolio/About :</i><br><br>
+                <a id="redirect" href="about.html">About Kiran</a><br>
+                <i>He is a full stack developer,competitive coder and a free lancer . As a coder he optimise the complex
+                    things. Currently, he
+                    is the lead of Codechef VIIT Student chapter and as a lead , he is capable in managing the work and
+                    can collaborate with
+                    team easily.He is capable of working with frontend and backend.</i><br><br>
+
+                <i id="links">https://kiran's portfolio/Skills :</i><br><br>
+                <a id="redirect" href="skill.html">Skills of Kiran</a><br>
+                <i>Kiran is good at c,c++,java,python,Html,Css js,Ejs,Express,Mongoose,Mongodb,Sql,React</i>
+            </div>
+            <div id="dl2">
+                <i id="about"> People also ask:</i><br><br>
+                <hr>
+                <div id="d1" onclick="f1()">
+                    <b>What are the achievements of kiran?</b>
+                    <i class="fi fi-ss-angle-small-down"></i>
+                </div>
+                <div id="d1-data" style="display:none">
+                    <ul>
+                        <li>Google Foobar</li>
+                        <p>Successfully Completed 2 levels in Google's Secret Hiring Challenge</p>
+                        <li>VISTA Hackathon</li>
+                        <p>Secured 2nd position in VISTA HACKATHON and received 5000 cash prize</p>
+                        <li>NATIONAL LEVEL TECH EXTRAVAGANZA</li>
+                        <p>Secured 3rd position and received 10000 cash prize</p>
+                        <li>CODING NINJAS IICC</li>
+                        <p>Secured 238 Rank in Round1 of Coding Ninjas IICC Competition</p>
+                        <li>VIGNAN'S CODING COMPETITION</li>
+                        <p>Secured 1st position and won 1000 cash prize</p>
+                    </ul>
+                </div>
+                <hr>
+                <div id="d1" onclick="f2()">
+                    <b>What are the hobbies of kiran?</b>
+                    <i class="fi fi-ss-angle-small-down"></i>
+                </div>
+                <div id="d2-data" style="display:none">
+                    <ul>
+                        <li>Travelling</li>
+                        <li>Listening music</li>
+                        <li>Web surfer</li>
+                    </ul>
+                </div>
+                <hr>
+                <div id="d1" onclick="f3()">
+                    <b>What is the Educational background of kiran?</b>
+                    <i class="fi fi-ss-angle-small-down"></i>
+                </div>
+                <div id="d3-data" style="display:none">
+                    <ul>
+                        <li>Matriculation at ARDAR ENGLISH MEDIUM SCHOOL </li>
+                        <p>Secured 10 GPA</p>
+                        <li>Intermediate at NARAYANA JUNIOR COLLEGE </li>
+                        <p>Secured 9.94 GPA </p>
+                        <li>Engineering at Vignan's Institute of Information Technology </li>
+                        <p>Branch : Computer Science & Engineering</p>
+                    </ul>
+                </div>
+                <hr>
+                <div id="d1" onclick="f4()">
+                    <b>What are the extra-curricular activities of kiran?</b>
+                    <i class="fi fi-ss-angle-small-down"></i>
+                </div>
+                <div id="d4-data" style="display:none">
+                    <ul>
+                        <li>Playing Chess</li>
+                        <li>Solving Riddles</li>
+                        <li>Kho-kho player</li>
+                    </ul>
+                </div>
+                <hr>
+            </div>
+            <div id="dl1">
+                <i id="links">https://kiran's portfolio/projects :</i><br><br>
+                <a id="redirect" href="project.html">Kiran's Projects</a><br>
+                <i>Agri Tech: The Project aims to provide support to farmers by providing weather forecasting, lending
+                    machinery,multilingual support,selling and buying of products from farmers.It enables them to know
+                    about weather and helps to lend,
+                    take machinery from others</i><br><br><br>
+
+                <i id="links">https://kiran's portfolio/Certifications :</i><br><br>
+                <a id="redirect" href="certificate.html">Kiran's Certifications</a><br>
+                <i> <span>Kiran Atmakuri had certifications in C,C++,Java,Python. He is a Codechef Certified DSA Coder and an
+                    NPTEL Certied Java Programmer</span> </i><br><br><br>
+
+                <i id="links">https://kiran's portfolio/Contact :</i><br><br>
+                <a id="redirect" href="contact.html">Kiran's Contact Form</a><br>
+                <i>You can contact kiran in instagram,linkedin and through mails.You can provide feedback about the
+                    webpage and can give suggestions to kiran
+                    also.</i><br><br>
+            </div>
+        </div>
+        <div id="dr">
+            <i id="about"> About</i><br>
+            <div id="dr2">
+                <p>Atmakuri Kiran is a full stack developer,competitive coder and a free lancer . As a coder he optimise the complex things. Currently, he is the lead of Codechef VIIT Student chapter and as a lead , he is capable in managing the work and
+                    can collaborate with team easily.He is capable of working with frontend and backend</p>
+                <p><i>Name :</i> Atmakuri Kiran</p>
+                <p><i>DoB :</i> 23rd November 2002 , Visakhapatnam</p>
+                <p><i>Email:</i> imkiran516@gmail.com</p>
+                <p><i>Contact:</i> 8919950595</p>
+                <p><i>Qualification: </i>BTech CSE</p>
+                <hr>
+            </div>
+            <i id="about"> Profiles</i><br><br>
+            <div id="dr3">
+
+                <div id="dr3-1">
+                    <a href="https://www.linkedin.com/in/atmakuri-kiran-064612242/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" id="profile"></a>
+                    <p>LinkedIn</p>
+                </div>
+                <div id="dr3-1">
+                    <a href="https://github.com/kiranatmakuri516"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" id="profile"></a>
+                    <p>Github</p>
+                </div>
+                <div id="dr3-1">
+                    <a href="https://leetcode.com/kiran_516/"><img src="https://leetcode.com/static/images/LeetCode_logo_rvs.png" id="profile"></a>
+                    <p>Leetcode</p>
+                </div>
+                <div id="dr3-1">
+                    <a href="https://www.codechef.com/users/kiran_516"><img src="https://i.pinimg.com/originals/c5/d9/fc/c5d9fc1e18bcf039f464c2ab6cfb3eb6.jpg" id="profile"></a>
+                    <p>Codechef</p>
+                </div>
+                <div id="dr3-1">
+                    <a href="https://codeforces.com/profile/Kiran_516"><img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/062020/codeforces_logo.png?Qlx1_zCw.Q4T7PHPosbkLyNiBJQWX7GD&itok=6wPhjh1X" id="profile"></a>
+                    <p>Codeforces</p>
+                </div>
+                <div id="dr3-1">
+                    <a href="https://auth.geeksforgeeks.org/user/kiranvignan516"><img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200x200-min.png" id="profile"></a>
+                    <p>GeeksforGeeks</p>
+                </div>
+                <div id="dr3-1">
+                    <a href="https://www.codingninjas.com/codestudio/profile/3648d7c0-4120-4d0b-9698-455ab1636e71"><img src="https://files.codingninjas.in/0000000000000723.jpg" id="profile"></a>
+                    <p>Coding Ninjas</p>
+                </div>
+                <div id="dr3-1">
+                    <a href="https://www.linkedin.com/in/atmakuri-kiran-064612242/"><img src="https://play-lh.googleusercontent.com/VRMWkE5p3CkWhJs6nv-9ZsLAs1QOg5ob1_3qg-rckwYW7yp1fMrYZqnEFpk0IoVP4LM" id="profile"></a>
+                    <p>Instagram</p>
+                </div>
+                <div id="dr3-1">
+                    <a href="mailto:imkiran516@gmail.com"><img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" id="profile"></a>
+                    <p>Mail</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgba(0, 0, 0, 0.847);
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            text-align: center;
+            color: white;
+        }
+        
+        .project-list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .project {
+            width: 25%;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-left: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            height: 700px;
+        }
+        
+        .project:hover {
+            transform: translateY(-5px);
+        }
+        
+        .project img {
+            max-width: 100%;
+            height: 250px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 20px grey;
+        }
+        
+        .project img:hover {
+            scale: 1.05;
+        }
+        
+        .project:hover {
+            scale: 1.1;
+            box-shadow: 0 0 10px grey;
+            margin: 30px;
+            transition: 1.2s;
+        }
+        
+        .project h2 {
+            color: #333;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        
+        .project p {
+            color: #0e0c0c;
+            margin-top: 5px;
+            font-size: 17px;
+        }
+        
+        #desc {
+            height: fit-content;
+        }
+        
+        @media only screen and (max-width: 480px) {
+            h1 {
+                font-size: 24px;
+                margin: 10px;
+            }
+            .project {
+                width: 100%;
+                height: fit-content;
+            }
+        }
+        
+        @media only screen and (min-width: 481px) and (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+            }
+            .project {
+                width: 45%;
+                height: fit-content;
+            }
+        }
+        
+        @media only screen and (min-width: 769px) and (max-width: 1024px) {
+            h1 {
+                font-size: 36px;
+            }
+            .project {
+                width: 30%;
+                height: fit-content;
+            }
+        }
+        
+        @media only screen and (min-width: 1025px) {
+            h1 {
+                font-size: 48px;
+            }
+            .project {
+                width: 23%;
+                height: fit-content;
+            }
+        }
+    </style>
+    <script>
+        let title = document.title;
+        window.addEventListener("blur", () => {
+            document.title = "Come Back :(";
+        });
+        window.addEventListener("focus", () => {
+            document.title = title;
+        });
+    </script>
+</head>
+
+<body>
+    <script>
+        document.body.style.zoom = '90%';
+    </script>
+    <div class="container">
+        <h1>Projects of Kiran Atmakuri</h1>
+        <div class="project-list">
+            <div class="project">
+                <img src="https://indian-retailer.s3.ap-south-1.amazonaws.com/s3fs-public/2021-07/agritech.jpg" alt="project 1">
+                <h2>TECHNOLOGICAL SUPPORT TO FARMERS</h2>
+                <p id="desc">The Project aims to provide support to farmers by providing weather forecasting, lending machinery,multilingual support,selling and buying of products from farmers</p>
+                <p>
+                    <b>Type:</b>Web Application
+                </p>
+                <p>
+                    <b>Tech Stack:</b>Mern Stack
+                </p>
+                <p><b>Project Link:</b>
+                    <a href="https://agritech-ry58.onrender.com"> https://agritech-ry58.onrender.com
+                    </a>
+                </p>
+            </div>
+            <div class="project">
+                <img src="https://www.nicepng.com/png/detail/26-263035_2-town-police-station-kakinada-ap-police-si.png" alt="project 1">
+                <h2>TASK SCHEDULER AND MANAGER</h2>
+                <p id="desc">This Project is developed for AP police Vizianagaram to monitor and track the reports . This enables them to complete the task on time as it reminds them about the assigned task to officer through text messages and emails.</p>
+                <p>
+                    <b>Type:</b>Web Application
+                </p>
+                <p>
+                    <b>Tech Stack:</b>Mern Stack
+                </p>
+                <p><b>Project Link:</b>
+                    <a href="https://media.istockphoto.com/id/956081922/vector/authorized-personnel-only-security.jpg?s=612x612&w=0&k=20&c=4vjHi8DzS6mZz06XWGWGlDKUwUATk6CSkVD0TvAVlQ8=">
+                        Can't Be shared</a>
+                </p>
+            </div>
+            <div class="project">
+                <img src="https://i0.wp.com/graficus.com/wp-content/uploads/2021/06/Portfolio-header.jpg?fit=2120%2C639&ssl=1" alt="project 1">
+                <h2>PORTFOLIO GENERATOR</h2>
+                <p id="desc">This project is designed to produce portfolio's to the people by selecting their desired templates provided. By this project user can get their portfolio by providing their details.
+                </p>
+                <p>
+                    <b>Type:</b>Web Application
+                </p>
+                <p>
+                    <b>Tech Stack:</b>Mern Stack
+                </p>
+                <p><b>Project Link:</b>
+                    <a href="https://github.com/kiranatmakuri516/portfolio_generator">
+                        https://shorturl.at/bhSU9
+                    </a>
+                </p>
+            </div>
+            <div class="project">
+                <img src="https://www.elegantthemes.com/blog/wp-content/uploads/2018/04/Best-Code-and-Text-Editors.png" alt="project 1">
+                <h2>CODE EDITOR</h2>
+                <p id="desc">This projects enables the users to develop an application using html,css,js and the output is being displayed right below the code, which makes it easier to develop.
+                </p>
+                <p>
+                    <b>Type:</b>Web Application
+                </p>
+                <p>
+                    <b>Tech Stack:</b>Mern Stack
+                </p>
+                <p><b>Project Link:</b>
+                    <a href="https://github.com/kiranatmakuri516/code_editor">
+                        https://shorturl.at/bAKZ2
+                    </a>
+                </p>
+            </div>
+            <div class="project">
+                <img src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202010/jobs_660_130920052343_291020052310.jpg?size=948:533" alt="project 1">
+                <h2>CARRER FRIEND</h2>
+                <p id="desc">Career friend is a project helps to provide the job vacancies information to the job aspirants and it provides the resources to the aspirants to develop their skills and helps them to search vacancies based on their requirements like domain
+                </p>
+                <p>
+                    <b>Type:</b>Web Application
+                </p>
+                <p>
+                    <b>Tech Stack:</b>Mern Stack
+                </p>
+                <p><b>Project Link:</b>
+                    <a href="https://github.com/kiranatmakuri516/Career_Friend">
+                        https://shorturl.at/dlpu6
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
